@@ -45,12 +45,6 @@ end
 Section:NewDropdown("ชื่อผู้เล่น", " ", players, function(abc)
     Select = abc
 end)
-Section:NewButton("ลบชื่อคนที่ตายไปแล้ว", "ควยย", function()
-table.clear(players)
-for i,v in pairs(game:GetService("Players"):GetChildren()) do
-table.insert(players,v.Name)
-end
-end)
 Section:NewButton("วาป", "ควยย", function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[Select].Character.HumanoidRootPart.CFrame
 end)
