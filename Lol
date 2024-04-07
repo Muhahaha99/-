@@ -5,7 +5,7 @@ local Tab = Window:NewTab("หน้าแรก")
 local Section = Tab:NewSection("สคริปต์ต่างๆ")
 
 Section:NewButton("ถือของไม่ตก", "ควย", function()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/SAZXHUB/Control-update/main/README.md'),true))()
+loadstring(game:HttpGet("https://pastebin.com/raw/KbSCJFhZ"))();
 end)
 Section:NewButton("infinite yield", "ควย", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
