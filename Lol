@@ -63,8 +63,39 @@ end)
 Section:NewButton("วาป", "ควยย", function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[Select].Character.HumanoidRootPart.CFrame
 end)
+local Tab = Window:NewTab("ดึงของ")
+local Section = Tab:NewSection("อาหาร")
+Section:NewButton("กล้วย", "ควยย", function()
+for _, child in workspace.Van.Wheels:GetChildren() do
+    if child.Name == "FL" then
+        game:GetService("Workspace").banana.Banana.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+    end
+end
+end)
+Section:NewButton("แอปเปิ้ล", "ควยย", function()
+for _, child in workspace.Van.Wheels:GetChildren() do
+    if child.Name == "FL" then
+        game:GetService("Workspace").Apple.Handle.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+    end
+end
+end)
+Section:NewButton("ขนมปัง", "ควยย", function()
+for _, child in workspace.Van.Wheels:GetChildren() do
+    if child.Name == "FL" then
+        game:GetService("Workspace").Bread.Bread.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+    end
+end
+end)
+local Section = Tab:NewSection("ปืน")
+Section:NewButton("ปืนพก", "ควยย", function()
+for _, child in workspace.Van.Wheels:GetChildren() do
+    if child.Name == "FL" then
+        game:GetService("Workspace").Pistol.Handle.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+    end
+end
+end)
 local Tab = Window:NewTab("ตั้งค่า")
 local Section = Tab:NewSection("ปุ่มเปิดปิด UI")
-Section:NewKeybind("ปุ่มเปิดปิด UI", "KeybindInfo", Enum.KeyCode.F, function()
+Section:NewKeybind("ปุ่มเปิดปิด UI", "KeybindInfo", Enum.KeyCode.T, function()
 	Library:ToggleUI()
 end)
